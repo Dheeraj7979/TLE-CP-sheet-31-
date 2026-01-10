@@ -1,4 +1,4 @@
-// codeforces :- Jagged Swaps
+// codeforces :- Doremy's paint
 // tle sheet cp 31 rating 800 problem 6
 // link :- https://codeforces.com/problemset/problem/1890/A
 
