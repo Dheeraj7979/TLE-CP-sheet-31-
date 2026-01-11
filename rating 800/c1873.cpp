@@ -16,7 +16,7 @@ int solve() {
     }
     int ans=0;
     for(int i=0;i<10;i++){
-     for(int j=0;j<10;j++){
+     for(int j=0;j<10;j++){   
           if(v[i][j]=='X'){
                if(i==0||i==9||j==0||j==9) ans+=1; 
                else if(i==1||i==8||j==1||j==8) ans+=2;
