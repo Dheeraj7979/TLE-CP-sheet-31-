@@ -8,18 +8,13 @@ using namespace std;
 #define sz(x) (int)(x).size()
 
 string solve() {
-     int n;
-     cin>>n;
-     vector<int>a(n);
-     for(int i=0;i<n;i++){
-          cin>>a[i];
-     }
-     int odd=0;
-    for(int i=0;i<n;i++){
-     if(a[i]%2!=0) odd++;
-    }
-    if(odd%2==0) return "YES";
-    else return "NO";
+    int a,b,c;
+    cin>>a>>b>>c;
+    a=a+c-c/2;
+    b=b+c/2;
+    if(a>b) return "First";
+    else return "Second";
+
 }
 
 int main() {

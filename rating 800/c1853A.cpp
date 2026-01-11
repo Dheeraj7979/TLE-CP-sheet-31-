@@ -7,19 +7,21 @@ using namespace std;
 #define all(x) (x).begin(), (x).end()
 #define sz(x) (int)(x).size()
 
-string solve() {
+int solve() {
      int n;
      cin>>n;
      vector<int>a(n);
      for(int i=0;i<n;i++){
           cin>>a[i];
      }
-     int odd=0;
-    for(int i=0;i<n;i++){
-     if(a[i]%2!=0) odd++;
-    }
-    if(odd%2==0) return "YES";
-    else return "NO";
+     int mindiff=INT_MAX;
+     for(int i=1;i<n;i++){
+          if(!(a[i-1]<=a[i])) return 0;
+          int diff=a[i]-a[i-1];
+          mindiff=min(mindiff,diff);
+     }
+     
+     return mindiff/2+1;
 }
 
 int main() {
